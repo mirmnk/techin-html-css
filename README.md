@@ -11,3 +11,4 @@ VS Code config:
 |---|---|---|---|
 | 1 | Įvadas, pagrindinės žymės | 2026-10-07 | [01_ivadas](01_ivadas/) — užduotis 1, 2 (iki 10-12) |
 | 2 | Žymės (2 dalis), inline CSS, margin/padding | 2026-10-08 | [02_stiliai](02_stiliai/) — užduotis (Classroom) |
+| 3 | display, lentelės, nuorodos | 2026-10-12 | [03_stiliai_display](03_stiliai_display/) — display, lentelė (rowspan/colspan), 3 puslapiai |
