@@ -9,7 +9,9 @@ VS Code config:
 
 | # | Modulis | Data | Užduotys |
 |---|---|---|---|
-| 1 | Įvadas, pagrindinės žymės | 2026-10-07 | [01_ivadas](01_ivadas/) — užduotis 1, 2 (iki 10-12) |
-| 2 | Žymės (2 dalis), inline CSS, margin/padding | 2026-10-08 | [02_stiliai](02_stiliai/) — užduotis (Classroom) |
-| 3 | display, lentelės, nuorodos | 2026-10-12 | [03_stiliai_display](03_stiliai_display/) — display, lentelė (rowspan/colspan), 3 puslapiai |
-| 4 | Formos | 2026-10-13 | — užduotys Classroom + papildomų užduočių modulis (forma) |
+| 1 | Įvadas, pagrindinės žymės | 2026-10-07 | [01 HTML](01%20HTML/) — užduotis 1, 2 (iki 10-12) |
+| 2 | Žymės (2 dalis), inline CSS, margin/padding | 2026-10-08 | [02 HTML](02%20HTML/) — užduotis (Classroom) |
+| 3 | display, lentelės, nuorodos | 2026-10-12 | [03 HTML](03%20HTML/) — display, lentelė (rowspan/colspan), 3 puslapiai |
+| 4 | Formos | 2026-10-13 | [04 HTML](04%20HTML/) — užduotis 1, 2 (Classroom) |
+
+Papildomos užduotys (Classroom modulis): [papildomos](papildomos/) — forma-4 (registracijos forma)
