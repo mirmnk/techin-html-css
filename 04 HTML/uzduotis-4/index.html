@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="TECHIN kurso Tinklalapių kūrimas (Edgaras, VH-2) 04-HTML. Užduotis 4 (2026-10-13)"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Tinklalapių kūrimas, TECHIN, 04-HTML"
+    />
+    <meta name="author" content="Miroslav Monkevič" />
+    <title>Užduotis 4 (2026-10-13) :: 04-HTML :: Tinklalapių kūrimas</title>
+    <style>
+      * {
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        font-size: 12px;
+      }
+      div#form-container {
+        width: 298px;
+        background-color: white;
+        margin-inline: auto;
+        margin-top: 3em;
+        padding: 15px 15px 30px 15px;
+        border-radius: 3px;
+      }
+      .field-left input,
+      .field-right input {
+        width: 122px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 9px;
+        color: #97979f;
+        border: 2px solid #e6e6e6;
+        border-radius: 3px;
+        padding: 5px;
+      }
+      label {
+        font-size: 10px;
+      }
+      div#radios-group label {
+        font-weight: bold;
+        padding-right: 3em;
+      }
+      div#radios-group input {
+        border: 2px solid #e6e6e6;
+      }
+      .field-left,
+      .field-right {
+        width: 140px;
+        display: inline-block;
+      }
+      .field-left {
+        width: 154px;
+      }
+      button {
+        width: 298px;
+        background-color: #9762bc;
+        color: white;
+        border: 0;
+        padding-block: 0.5em;
+        border-radius: 3px;
+        margin-top: 2em;
+      }
+      hr {
+        margin: 0;
+        margin-bottom: 1em;
+        margin-top: 1px;
+        width: 15px;
+        height: 3px;
+        border: 0;
+        background-color: #9762bc;
+      }
+    </style>
+  </head>
+  <body style="background-color: #7aa5da">
+    <div id="form-container">
+      <form action="#">
+        <h2 style="margin-block: 0; font-size: 14px;">Registration</h2>
+        <hr />
+
+        <div class="field-left">
+          <label for="fullname">Full Name</label
+          ><input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="field-right">
+          <label for="username">Usename</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username" autocomplete="username"
+          />
+        </div>
+        <div class="field-left">
+          <label for="email">Email</label
+          ><input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email" autocomplete="email"
+          />
+        </div>
+
+        <div class="field-right">
+          <label for="phone">Phone Number</label
+          ><input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number" autocomplete="tel"
+          />
+        </div>
+        <div class="field-left">
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="field-right">
+          <label for="password2">Confirm Password</label
+          ><input
+            type="text"
+            name="password2"
+            id="password2"
+            placeholder="Confirm your password"
+          />
+        </div>
+        <div id="radios-group">
+          <h2>Gender</h2>
+          <input type="radio" value="male" name="gender" id="male" /><label
+            for="male"
+            >Male</label
+          ><input type="radio" name="gender" id="female" value="female" /><label
+            for="female"
+            >Female</label
+          ><input type="radio" name="gender" id="nosex" value="nosex" /><label
+            for="nosex"
+            >Prefer not to say</label
+          >
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
