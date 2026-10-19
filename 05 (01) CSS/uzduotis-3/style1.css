@@ -21,6 +21,12 @@ main article h3 {
 main article p {
   text-indent: 2em;
 }
+
+main article p span {
+color: #ffa500;
+letter-spacing: 1em;
+}
+
 main article figure figcaption {
   font-size: x-small;
   text-align: right;
