@@ -1,0 +1,57 @@
+header {
+  background-color: #333333;
+  color: white;
+}
+header h1 span {
+  color: #ffa500;
+}
+
+header nav {
+  background-color: #666666;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main article h3 {
+  text-transform: uppercase;
+}
+
+main article p {
+  text-indent: 2em;
+}
+main article figure figcaption {
+  font-size: x-small;
+  text-align: right;
+  font-style: italic;
+  color: #ffa500;
+}
+main article a:last-child {
+  text-transform: uppercase;
+  color: #ffa500;
+  text-decoration: none;
+}
+main aside h4 {
+  background-color: #666666;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 1em;
+  letter-spacing: 1em;
+}
+
+main aside section nav {
+  text-align: center;
+}
+
+main aside section nav a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
