@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="TECHIN kurso Tinklalapių kūrimas (Edgaras, VH-2) 04-HTML. Užduotis 2 (2026-10-13)"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Tinklalapių kūrimas, TECHIN, 04-HTML"
+    />
+    <meta name="author" content="Miroslav Monkevič" />
+    <title>Užduotis 2 (2026-10-13) :: 04-HTML :: Tinklalapių kūrimas</title>
+    <style>
+      #form-container {
+        width: 25em;
+        margin-inline: auto;
+        margin-block: 2em;
+      }
+      div.input-label {
+        /* width: 240px; */
+      }
+      div.input-label input {
+        margin-block: 15px;
+        border: 1px solid lightgray;
+      }
+      input::placeholder {
+        color: lightgray;
+      }
+      div.input-label label {
+        display: block;
+      }
+      div.input-label input[type="number"] {
+        width: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form-container">
+      <h1 style="font-size: 1.5em">Užpildykite formą:</h1>
+      <h2 style="font-size: 0.8em">Visi laukai privalomi.</h2>
+      <form action="#" method="get">
+        <div class="input-label">
+          <label for="vardas">Vardas (iš didžiosios raidės):</label>
+          <input type="text" name="vardas" id="vardas" placeholder="Vardas" />
+        </div>
+        <div class="input-label">
+          <label for="phone">Jūsų telefono numeris:</label
+          ><input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+370-xxx-xxxxx"
+            title="+370-xxx-xxxxx"
+            required
+            pattern="\+370-[0-9]{3}-[0-9]{5}"
+          />
+        </div>
+        <div class="input-label">
+          <label for="email">El. pašto adresas:</label
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="el. p. adresas"
+            required
+          />
+        </div>
+        <div class="input-label">
+          <label for="website"
+            >Jūsų mėgstamiausios internetinės svetainės adresas:</label
+          ><input
+            type="url"
+            name="website"
+            id="website"
+            placeholder="url adresas"
+            required
+          />
+        </div>
+        <div class="input-label">
+          <label for="birthdate">Jūsų gimimo data:</label
+          ><input type="date" name="birthdate" id="birthdate" required />
+        </div>
+        <div class="input-label">
+          <label for="age">Jūsų amžius (18-65):</label
+          ><input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="nuo 18 iki 65 metų"
+            min="18"
+            max="65"
+            required
+          />
+        </div>
+        <div class="input-label">
+          <label for="postcode">Jūsų pašto kodas:</label
+          ><input
+            type="text"
+            name="postcode"
+            id="postcode"
+            placeholder="XX-01234"
+            title="XX-01234"
+            pattern="[A-Z]{2}-[0-9]{4}"
+            required
+          />
+        </div>
+        <div class="input-label">
+          <label for="color">Jūsų mėgstamiausia spalva:</label
+          ><input type="color" name="color" id="color" required />
+        </div>
+        <div class="input-label">
+          <button type="submit">Pateikti</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
