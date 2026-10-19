@@ -1,8 +1,12 @@
 div.container ul li::before {
   content: "\2605 ";
-  color: lightgray
+  color: lightgray;
 }
 
 div.container ul {
-    list-style: none;
+  list-style: none;
+}
+
+li.active {
+  font-weight: bold;
 }
