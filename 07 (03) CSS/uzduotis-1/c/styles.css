@@ -1,0 +1,88 @@
+* {
+  font-family: "Poppins";
+}
+
+fa-youtube {
+  color: #f60800;
+  background-color: #f60800;
+}
+
+article img {
+  width: 77px;
+  border-radius: 40px;
+  border: 2px solid #3f71f5;
+  padding: 2px;
+  background-color: white;
+}
+
+div.main-container {
+  width: 300px;
+  margin-inline: auto;
+  border: 1px solid #f0f0f0;
+  margin-block: 2em;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+article.card {
+  background-color: white;
+  border-radius: 8px;
+  margin: 2em;
+  padding: 1em;
+  background-image: url("../i/card_bkg.png");
+  background-repeat: repeat-x;
+}
+article h2 {
+  font-size: 14px;
+  margin-block: 0;
+}
+article p {
+  font-size: 10px;
+  margin-top: 0;
+}
+
+#button-bar {
+  .fa-youtube,
+  .fa-facebook-f,
+  .fa-twitter,
+  .fa-square-instagram {
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+#button-bar .fa-facebook-f {
+  background-color: #4167b3;
+}
+
+#button-bar .fa-youtube {
+  background-color: #f60800;
+}
+
+#button-bar .fa-twitter {
+  background-color: #18a1fd;
+}
+
+#button-bar .fa-square-instagram {
+  background-color: #e1336e;
+}
+
+footer,
+.material-symbols-outlined {
+  font-size: 10px;
+  word-spacing: 1em;
+}
+
+#buttons {
+  margin-block: 0.8em;
+}
+#buttons button {
+  display: inline-block;
+  background-color: #456ff6;
+  border: 0;
+  color: white;
+  font-size: 9px;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
