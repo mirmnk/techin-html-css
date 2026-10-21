@@ -1,0 +1,41 @@
+div.sumustekas {
+    padding: 2em;
+    text-align: center;
+    width: 600px;
+}
+
+div.bandele-top {
+  background-color: #e5b05a;
+  height: 112px;
+  width: 500px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom: 14px solid #ce9e51;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-inline: auto;
+}
+
+div.suris {
+  height: 22px;
+  width: 545px;
+  background-color: #f2c11f;
+  border-bottom: 1px solid #d9ad1d;
+  margin-inline: auto;
+}
+div.kecupas {
+  height: 37px;
+  width: 415px;
+  background-color: #dd3611;
+  border-bottom: 1px solid #d56312;
+  margin-inline: auto;
+
+}
+div.svogunas {
+  height: 37px;
+  width: 315px;
+  background-color: #a039bf;
+  border-bottom: 1px solid #d56312;
+  margin-inline: auto;
+
+}
