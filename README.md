@@ -17,3 +17,5 @@ VS Code config:
 | 6 | CSS selektoriai: atributai, pseudo klasės ir elementai | 2026-10-15 | [06 (02) CSS](06%20%2802%29%20CSS/) — užduotis 2–5 (::before simbolis, nth-child + hover, nuorodos pagal atributus, registracijos forma) |
 | 7 | Specifiškumas, paveldėjimas, šriftai ir ikonėlės | 2026-10-19 | [07 (03) CSS](07%20%2803%29%20CSS/) — užduotis 1 (kortelė: šriftai, ikonėlės, vertical-align) |
 | 8 | Dėžės modelis, box-sizing, spalvos, rėmelis, šešėlis | 2026-10-20 | [08 (04) CSS](08%20%2804%29%20CSS/) — užduotis 1 (sentencija), 4 (mėsainis, tik CSS); 2, 3, 6 ir * — skaidrės 32–39 |
+| 9 | Matavimo vienetai, fonas (background), CSS reset | 2026-10-21 | [09 (05) CSS](09%20%2805%29%20CSS/) — užduotis 1 (koliažas iš 3 fono paveikslėlių) |
+| 10 | display, float, position, z-index, transform | 2026-10-22 | 10 (06) CSS — užduotis 5, 6 (+ * fiksuotas footer, laiko juosta) |

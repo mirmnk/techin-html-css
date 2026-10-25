@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body,
+#main-container {
+  background-color: rgb(238, 234, 234);
+  color: grey;
+}
+#main-container {
+  position: relative;
+  height: 40rem;
+  margin-inline: 2rem;
+}
+.container {
+  box-shadow: 0.3rem 0.3rem 1rem -0.3rem #000000;
+  width: 55%;
+  height: 20rem;
+  background-color: white;
+  border-radius: 3px;
+}
+.text {
+  padding: 1rem;
+  padding-left: 10%;
+  position: absolute;
+  top: 5rem;
+  left: 45%;
+  height: auto;
+}
+.text > * {
+  margin-left: 1rem;
+}
+
+.text a {
+  text-decoration: none;
+  background-color: rgb(221, 217, 217);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  color: inherit;
+}
+
+.picture {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 2;
+  background-image: url("../i/carla_manneh-monkey-10493779_1920.jpg");
+  background-position: top;
+  background-size: cover;
+}
