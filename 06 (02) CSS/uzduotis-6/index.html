@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-CSS :: Užduotis 06</title>
+    <!-- Pseudo elementai
+
+Prieš nuorodas, kurios URL adrese turi trumpinį „cv“, įterpti simbolį ♛; 
+Po nuorodomis, kurios URL adrese turi trumpinį „darb“, įterpti simbolį ♞; 
+
+www.cv.lt
+www.cvbankas.lt
+www.cvjobboard.com
+www.cvmarket.lt
+www.cvme.lt
+www.cvonline.lt
+www.darbai24.lt
+www.darbaslietuvoje.lt
+www.darbasuzsienyje.org
+www.darbo.lt 
+darbovieta.lt
+www.dirba.lt
+www.dirbkit.lt
+www.isidarbink.lt
+www.it-darbas.lt
+www.jobera.eu
+www.manager.lt
+www.naujasdarbas.lt
+www.noriudarbo.lt
+www.topjob.lt
+www.vtd.lt
+www.vilnius.cvzona.lt
+www.kaunas.cvzona.lt
+www.klaipeda.cvzona.lt
+
+ -->
+    <style>
+      li a[href*="darb"]::before {
+        content: "♛";
+        color: red;
+        display: inline-block;
+        margin-right: 0.25rem;
+      }
+      li a[href*="cv"]::before {
+        content: "♞ ";
+        color: black;
+        display: inline-block;
+        margin-right: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li><a href="https://www.cv.lt/" target="_blank">www.cv.lt</a></li>
+      <li>
+        <a href="https://www.cvbankas.lt/" target="_blank">www.cvbankas.lt</a>
+      </li>
+      <li>
+        <a href="https://www.cvjobboard.com/" target="_blank"
+          >www.cvjobboard.com</a
+        >
+      </li>
+      <li>
+        <a href="https://www.cvmarket.lt/" target="_blank">www.cvmarket.lt</a>
+      </li>
+      <li><a href="https://www.cvme.lt/" target="_blank">www.cvme.lt</a></li>
+      <li>
+        <a href="https://www.cvonline.lt/" target="_blank">www.cvonline.lt</a>
+      </li>
+      <li>
+        <a href="https://www.darbai24.lt/" target="_blank">www.darbai24.lt</a>
+      </li>
+      <li>
+        <a href="https://www.darbaslietuvoje.lt/" target="_blank"
+          >www.darbaslietuvoje.lt</a
+        >
+      </li>
+      <li>
+        <a href="https://www.darbasuzsienyje.org/" target="_blank"
+          >www.darbasuzsienyje.org</a
+        >
+      </li>
+      <li><a href="https://www.darbo.lt/" target="_blank">www.darbo.lt</a></li>
+      <li>
+        <a href="https://darbovieta.lt/" target="_blank">darbovieta.lt</a>
+      </li>
+      <li><a href="https://www.dirba.lt/" target="_blank">www.dirba.lt</a></li>
+      <li>
+        <a href="https://www.dirbkit.lt/" target="_blank">www.dirbkit.lt</a>
+      </li>
+      <li>
+        <a href="https://www.isidarbink.lt/" target="_blank"
+          >www.isidarbink.lt</a
+        >
+      </li>
+      <li>
+        <a href="https://www.it-darbas.lt/" target="_blank">www.it-darbas.lt</a>
+      </li>
+      <li>
+        <a href="https://www.jobera.eu/" target="_blank">www.jobera.eu</a>
+      </li>
+      <li>
+        <a href="https://www.manager.lt/" target="_blank">www.manager.lt</a>
+      </li>
+      <li>
+        <a href="https://www.naujasdarbas.lt/" target="_blank"
+          >www.naujasdarbas.lt</a
+        >
+      </li>
+      <li>
+        <a href="https://www.noriudarbo.lt/" target="_blank"
+          >www.noriudarbo.lt</a
+        >
+      </li>
+      <li>
+        <a href="https://www.topjob.lt/" target="_blank">www.topjob.lt</a>
+      </li>
+      <li><a href="https://www.vtd.lt/" target="_blank">www.vtd.lt</a></li>
+      <li>
+        <a href="https://www.vilnius.cvzona.lt/" target="_blank"
+          >www.vilnius.cvzona.lt</a
+        >
+      </li>
+      <li>
+        <a href="https://www.kaunas.cvzona.lt/" target="_blank"
+          >www.kaunas.cvzona.lt</a
+        >
+      </li>
+      <li>
+        <a href="https://www.klaipeda.cvzona.lt/" target="_blank"
+          >www.klaipeda.cvzona.lt</a
+        >
+      </li>
+    </ol>
+  </body>
+</html>
