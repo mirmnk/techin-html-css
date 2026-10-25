@@ -1,37 +1,37 @@
 * {
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: grey;
 }
 body,
 #main-container {
   background-color: rgb(238, 234, 234);
+  color: grey;
 }
 #main-container {
   position: relative;
   height: 40rem;
-  padding-inline: 2rem;
+  margin-inline: 2rem;
 }
 .container {
   box-shadow: 0.3rem 0.3rem 1rem -0.3rem #000000;
-  width: 50%;
+  width: 55%;
   height: 20rem;
   background-color: white;
   border-radius: 3px;
 }
 .text {
-  padding: 1rem;
   position: absolute;
   top: 5rem;
-  left: 40%;
+  left: 45%;
   height: auto;
 }
 
 .text #textbox {
-  transform: translate(100%);
-  width: 50%;
-  font-size: clamp(10px, 3vw, 20px);
-  padding-bottom: 1em;
+  transform: translate(22%);
+  width: 82%;
+  font-size: clamp(0.6rem, 3vw, 1.5rem);
+  padding: 2rem;
+  padding-top: 1rem;
 }
 
 .text a {
@@ -40,14 +40,16 @@ body,
   padding-inline: 1rem;
   padding-block: 0.5rem;
   border-radius: 5px;
+  display: inline-block;
+  color: grey;
 }
 
 .picture {
-  background-color: white;
   position: absolute;
-  top: 25%;
+  top: 10rem;
+  left: 0;
   z-index: 2;
-  background-image: url(../i/carla_manneh-monkey-10493779_1920.jpg);
-  background-position: center;
+  background-image: url("../i/carla_manneh-monkey-10493779_1920.jpg");
+  background-position: top;
   background-size: cover;
 }
