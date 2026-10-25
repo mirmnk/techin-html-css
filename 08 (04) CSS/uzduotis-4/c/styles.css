@@ -1,7 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black ;
+  color: wheat
+}
+
 div.sumustekas {
-    padding: 2em;
-    text-align: center;
-    width: 600px;
+  padding: 2em;
+  text-align: center;
+  width: 700px;
+}
+div.sumustekas div {
+  margin-inline: auto;
 }
 
 div.bandele-top {
@@ -13,7 +24,6 @@ div.bandele-top {
   border-bottom: 14px solid #ce9e51;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin-inline: auto;
 }
 
 div.suris {
@@ -21,21 +31,64 @@ div.suris {
   width: 545px;
   background-color: #f2c11f;
   border-bottom: 1px solid #d9ad1d;
-  margin-inline: auto;
-}
+  }
 div.kecupas {
   height: 37px;
   width: 415px;
   background-color: #dd3611;
   border-bottom: 1px solid #d56312;
-  margin-inline: auto;
-
-}
+  }
 div.svogunas {
-  height: 37px;
+  height: 28px;
   width: 315px;
   background-color: #a039bf;
-  border-bottom: 1px solid #d56312;
-  margin-inline: auto;
+  border-bottom: 28px dotted #b361cc;
+  border-left: none;
+  border-right: none;
+  
+}
+
+div.mesa {
+  background-color: #74380e;
+  display: inline-block;
+  width: 110px;
+  height: 100px;
+  border-radius: 60px;
+}
+
+div.agurkelis {
+  background-color: #3ac67d;
+  border-bottom: 13px solid #2c9961;
+  border-bottom-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+  width: 415px;
+  height: 56px;
+}
+
+div.mesos-paplotelis {
+  background-color: #ad360b;
+  width: 542px;
+  height: 50px;
+  border-bottom: 1px solid #9b3109;
+  border-radius: 25px;
 
 }
+div.bandele-bottom {
+  background-color: #e5b05a;
+  border-top: 12px solid #ce9e51;
+  width: 500px;
+  height: 62px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 85px;
+  border-bottom-right-radius: 85px;
+}
+
+div.lekste {
+  background-color: #656565;
+  width: 665px;
+  height: 36px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
