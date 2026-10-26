@@ -1,25 +1,86 @@
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    color: #384047;
+  font-family: "Nunito", sans-serif;
+  color: #384047;
 }
 
-
 label {
-    display: block;
-    margin-bottom: 8px;
+  display: block;
+  margin-bottom: 8px;
 }
 
 label.light {
-    font-weight: 300;
-    display: inline;
+  font-weight: 300;
+  display: inline;
 }
 
 /* Jūsų CSS prasideda čia */
+
+form {
+  width: 30rem;
+  background-color: #f4f7f8;
+}
+form > h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+form fieldset {
+  border: none;
+  margin-bottom: 2.5rem;
+}
+form span.number {
+  background-color: #5fcf80;
+  color: white;
+  padding-inline: 0.4rem;
+  border-radius: 20px;
+}
+form legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea,
+form select {
+  display: block;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e1e7e8;
+  background-color: #e8eeef;
+  height: 3rem;
+}
+
+form textarea {
+  height: 5rem;
+}
+
+form select {
+  font-weight: 500;
+  color: #8a97a0;
+  font-size: 0.9rem;
+  height: 2rem;
+}
+
+form label {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+form button[type="submit"] {
+  width: 100%;
+  color: white;
+  border: 1px solid #3ac162;
+  border-bottom-width: 3px;
+  height: 3.5rem;
+  background-color: #4bc970;
+  font-size: 1rem;
+  border-radius: 5px;
+}
