@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>07-CSS :: uzduotis 2</title>
-    <link rel="stylesheet" href="c/styles.css" />
+    <title>07-HTML :: uzduotis 2</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="logo">
-          <img src="i/TECHIN Neon Tech Badge.png" alt="Techin HTML CSS logo" title="Techin HTML CSS logo" />
-        </div>
-        <nav class="top-menu">
+        <a href="/" id="logo">
+          <img
+            src="i/TECHIN Neon Tech Badge.png"
+            alt="Techin logo"
+            width="80"
+          />
+        </a>
+        <nav id="top-menu">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
@@ -20,13 +23,9 @@
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
-        <section id="splash-screen">
-          <h1>Miroslav's responsive content</h1>
-          <p>
-            <span
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </span>
-          </p>
+        <section id="hero">
+          <h1></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <a href="#" class="button">Welcome</a>
         </section>
       </header>
@@ -36,74 +35,92 @@
             <h2></h2>
             <p></p>
           </header>
+          <hr />
           <figure>
-            <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
-              src=""
-              alt=""
-            />
+            <img
+              src="i/TECHIN Neon Tech Badge.png"
+              alt="Portfolio item 1"
+            /><img
+              src="i/TECHIN Neon Tech Badge.png"
+              alt="Portfolio item 2"
+            /><img
+              src="i/TECHIN Neon Tech Badge.png"
+              alt="Portfolio item 3"
+            /><img src="i/TECHIN Neon Tech Badge.png" alt="Portfolio item 4" />
           </figure>
         </section>
-        <section>
+        <section id="services">
           <header>
             <h2></h2>
             <p></p>
           </header>
           <hr />
-          <article
-            ><img src="" alt="" />
+          <article>
+            <img src="i/TECHIN Neon Tech Badge.png" alt="" />
             <h3></h3>
-            <p></p
-          ></article>
-          <article
-            ><img src="" alt="" />
+            <p></p>
+          </article>
+          <article>
+            <img src="i/TECHIN Neon Tech Badge.png" alt="" />
             <h3></h3>
-            <p></p
-          ></article>
-          <artctle
-            ><img src="" alt="" />
+            <p></p>
+          </article>
+          <article>
+            <img src="i/TECHIN Neon Tech Badge.png" alt="" />
             <h3></h3>
-            <p></p
-          ></artictle>
+            <p></p>
+          </article>
         </section>
-        <section>
-          <header><h2></h2></header>
-          <blockquote>
-            <p></p>
-            <footer>
-            </footer>
-          </blockquote>
-          <blockquote>
-            <p></p>
-            <footer>
-            </footer>
-          </blockquote>
-          <blockquote>
-            <p></p>
-            <footer>
-            </footer>
-          </blockquote>
+        <section id="responses">
+          <header><h2>What others say:</h2></header>
+          <figure>
+            <blockquote>
+              <p></p>
+            </blockquote>
+            <figcaption>John Smith</figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              <p></p>
+            </blockquote>
+            <figcaption>John Smith</figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              <p></p>
+            </blockquote>
+            <figcaption>John Smith</figcaption>
+          </figure>
         </section>
-        <section>
+        <section id="newsletter">
           <header><h2></h2></header>
           <p></p>
           <hr />
-          <section>
-            <form action="">
-              <input type="text" /><button type="submit"></button>
-            </form>
-          </section>
+          <form id="newsletter-form" action="#">
+            <input type="email" /><button type="submit"></button>
+          </form>
         </section>
       </main>
       <footer>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul id="social-links">
+          <li>
+            <a href=""><img src="..." alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href=""><img src="..." alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href=""><img src="..." alt="Pinterest" /></a>
+          </li>
+          <li>
+            <a href=""><img src="..." alt="TikTok" /></a>
+          </li>
+          <li>
+            <a href=""><img src="..." alt="Instagram" /></a>
+          </li>
         </ul>
         <p></p>
-        <p></p>
+        <p id="copyright"></p>
       </footer>
     </div>
   </body>
