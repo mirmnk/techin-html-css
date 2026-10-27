@@ -19,3 +19,4 @@ VS Code config:
 | 8 | Dėžės modelis, box-sizing, spalvos, rėmelis, šešėlis | 2026-10-20 | [08 (04) CSS](08%20%2804%29%20CSS/) — užduotis 1 (sentencija), 4 (mėsainis, tik CSS); 2, 3, 6 ir * — skaidrės 32–39 |
 | 9 | Matavimo vienetai, fonas (background), CSS reset | 2026-10-21 | [09 (05) CSS](09%20%2805%29%20CSS/) — užduotis 1 (koliažas iš 3 fono paveikslėlių) |
 | 10 | display, float, position, z-index, transform | 2026-10-22 | 10 (06) CSS — užduotis 5, 6 (+ * fiksuotas footer, laiko juosta) |
+| 11 | alt, object-fit, klasių pavadinimai, semantika | 2026-10-26 | 11 (07) CSS — užduotis 1 (semantinis karkasas), 2 (ankstesnė užduotis semantiškai) |
