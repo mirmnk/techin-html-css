@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+div.container {
+  margin: 0;
+  margin-inline: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 75rem;
+  min-height: 100vh;
+
+}
+
+div.container > header {
+  position: relative;
+  height: 40%;
+  max-height: 60rem;
+  background-image: url("../assets/img/sonyuser-mountains-5237939.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-inline: 6rem;
+}
+
+div.container > main,
+div.container > footer {
+  padding-inline: 7rem;
+}
+
+div#logo {
+}
+
+div#logo img {
+  border: 0;
+}
+
+div.logo img:hover {
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+}
+
+ul#top-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul#top-menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+ul#top-menu > li > a:hover {
+  color: red;
+}
+
+div#hero {
+  position: absolute;
+  color: white;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div#hero a.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #d0c32f;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+  padding: 1rem 2rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+div#hero a.button:hover {
+  opacity: 1;
+}
+/*
+nav ul > li,
+nav ul > li a {
+  display: inline-block;
+}
+
+nav ul > li a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: white;
+  font-size: 0.8rem;
+}
+nav ul > li a:hover {
+  color: red;
+}
+
+
+ */
