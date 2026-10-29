@@ -16,27 +16,22 @@ div.container {
   width: 100%;
   max-width: 75rem;
   min-height: 100vh;
-
 }
 
 div.container > header {
   position: relative;
-  height: 40%;
+  height: 50vh;
   max-height: 60rem;
   background-image: url("../assets/img/sonyuser-mountains-5237939.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  padding-inline: 6rem;
+  padding-inline: 4rem;
 }
 
 div.container > main,
 div.container > footer {
   padding-inline: 7rem;
-}
-
-div#logo {
 }
 
 div#logo img {
@@ -46,25 +41,30 @@ div#logo img {
 div.logo img:hover {
   cursor: pointer;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
-  padding-top: 2rem;
   font-size: 0.8rem;
+  padding-block: 1rem;
 }
 
-ul#top-menu {
+ul#top-menu,
+ul#social-links {
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: center;
   list-style-type: none;
+  gap: 1rem;
 }
 
 ul#top-menu > li > a {
   color: white;
   text-decoration: none;
-  padding-left: 1rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
 }
 
 ul#top-menu > li > a:hover {
@@ -96,21 +96,23 @@ div#hero a.button {
 div#hero a.button:hover {
   opacity: 1;
 }
-/*
-nav ul > li,
-nav ul > li a {
-  display: inline-block;
-}
 
-nav ul > li a {
-  text-decoration: none;
-  padding-left: 1rem;
+div.container > footer {
+  background-color: #414a4f;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 0.8rem;
-}
-nav ul > li a:hover {
-  color: red;
+  text-transform: uppercase;
 }
 
+div.container > footer a {
+  color: white;
+  text-decoration: none;
+}
 
- */
+P#copyright {
+  align-self: flex-end ;
+}
