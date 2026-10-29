@@ -102,10 +102,20 @@ div.container > footer {
   height: 15rem;
   display: flex;
   flex-direction: column;
+  font-weight: normal;
   justify-content: center;
   align-items: center;
   color: white;
   text-transform: uppercase;
+  gap: 1rem;
+}
+
+div.container > footer * {
+  margin: 0;
+}
+
+ul#social-links {
+  margin-bottom: 1rem;
 }
 
 div.container > footer a {
@@ -113,6 +123,3 @@ div.container > footer a {
   text-decoration: none;
 }
 
-P#copyright {
-  align-self: flex-end ;
-}
