@@ -123,3 +123,18 @@ div.container > footer a {
   text-decoration: none;
 }
 
+section hr {
+  background-color: #dec20b;
+  height: 2px;
+  width: 10rem;
+  border: 0;
+}
+
+section#portfolio figure {
+  display: flex;
+  border: 1px solid #000;
+}
+
+section#portfolio figure img {
+  width: 100%;
+}
