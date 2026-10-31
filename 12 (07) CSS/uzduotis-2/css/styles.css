@@ -27,9 +27,9 @@ div.container > header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-inline: 4rem;
-  }
+}
 
-div.container > main,
+
 div.container > footer {
   padding-inline: 7rem;
 }
@@ -81,7 +81,8 @@ div#hero {
   text-align: center;
 }
 
-div#hero a.button {
+div#hero a.button,
+button[type="submit"] {
   display: inline-block;
   text-decoration: none;
   background-color: #d0c32f;
@@ -91,6 +92,8 @@ div#hero a.button {
   padding: 1rem 2rem;
   opacity: 0.8;
   text-transform: uppercase;
+  text-align: center;
+  border: 0;
 }
 
 div#hero a.button:hover {
@@ -125,17 +128,23 @@ div.container > footer a {
 
 main > section > header {
   text-align: center;
+  text-transform: capitalize;
 }
 
 main > section:nth-child(even) {
   background-color: #f7f7f7;
-} 
+}
+
+main > section {
+  padding: 6rem;
+}
 
 section hr {
   background-color: #dec20b;
   height: 2px;
   width: 10rem;
   border: 0;
+  margin-block: 2.5rem;
 }
 
 section#portfolio figure {
@@ -143,7 +152,7 @@ section#portfolio figure {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  gap: 2.5rem;
+  gap: clamp(1rem, 3.3vw, 2.5rem);
 }
 
 section#portfolio figure img {
@@ -164,4 +173,26 @@ section#portfolio figure img:nth-child(4n + 2),
 section#portfolio figure img:nth-child(4n + 3) {
   flex-grow: 1;
   flex-basis: 50%;
+}
+
+section#services  article > h3 {
+  text-transform: capitalize;
+}
+section#services  article {
+  text-align: center;
+}
+.material-symbols-outlined {
+  color: #dec20b;
+}
+
+div.articles {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em; 
+
+}
+
+section#responses figure figcaption::before {
+  content: "&mdash ";
+
 }
