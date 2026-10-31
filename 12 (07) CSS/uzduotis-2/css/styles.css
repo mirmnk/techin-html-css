@@ -123,6 +123,10 @@ div.container > footer a {
   text-decoration: none;
 }
 
+main > section {
+  width: 100%;
+}
+
 section hr {
   background-color: #dec20b;
   height: 2px;
@@ -132,19 +136,28 @@ section hr {
 
 section#portfolio figure {
   display: flex;
-  border: 1px solid red;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
   gap: 2.5rem;
 }
 
 section#portfolio figure img {
   height: 19rem;
   object-fit: cover;
+  flex-basis: 0;
 }
 
 section#portfolio figure img:nth-child(4n + 1),
 section#portfolio figure img:nth-child(4n) {
-  width: 35%;
+  flex-basis: 35%;
+  
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+section#portfolio figure img:nth-child(4n + 2),
+section#portfolio figure img:nth-child(4n + 3) {
+  flex-grow: 1;
 }
