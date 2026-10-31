@@ -147,7 +147,7 @@ section#portfolio figure {
 }
 
 section#portfolio figure img {
-  height: 19rem;
+  height: clamp(12rem, 25vw, 19rem);
   object-fit: cover;
   min-width: 0;
 }
