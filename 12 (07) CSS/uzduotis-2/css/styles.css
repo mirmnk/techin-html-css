@@ -27,7 +27,7 @@ div.container > header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-inline: 4rem;
-}
+  }
 
 div.container > main,
 div.container > footer {
@@ -123,9 +123,13 @@ div.container > footer a {
   text-decoration: none;
 }
 
-main > section {
-  width: 100%;
+main > section > header {
+  text-align: center;
 }
+
+main > section:nth-child(even) {
+  background-color: #f7f7f7;
+} 
 
 section hr {
   background-color: #dec20b;
@@ -137,7 +141,6 @@ section hr {
 section#portfolio figure {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   gap: 2.5rem;
@@ -146,13 +149,13 @@ section#portfolio figure {
 section#portfolio figure img {
   height: 19rem;
   object-fit: cover;
-  flex-basis: 0;
+  min-width: 0;
 }
 
 section#portfolio figure img:nth-child(4n + 1),
 section#portfolio figure img:nth-child(4n) {
   flex-basis: 35%;
-  
+
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -160,4 +163,5 @@ section#portfolio figure img:nth-child(4n) {
 section#portfolio figure img:nth-child(4n + 2),
 section#portfolio figure img:nth-child(4n + 3) {
   flex-grow: 1;
+  flex-basis: 50%;
 }
