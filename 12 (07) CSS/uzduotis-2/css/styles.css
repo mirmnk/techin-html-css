@@ -192,7 +192,21 @@ div.articles {
 
 }
 
+section#responses figure {
+  text-align: center;
+}
+
 section#responses figure figcaption::before {
-  content: "&mdash ";
+  content: "\2014  ";
 
 }
+
+section#newsletter form {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+section#newsletter form input[type="email"] {
+  flex-grow: 1;
+  }

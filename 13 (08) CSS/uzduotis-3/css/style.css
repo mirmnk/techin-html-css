@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #00557d;
+    color: white;
+    padding: 0.5rem;
+}
+
+main article {
+    background-color: #a9e8dc;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header header header header"
+    "article article article article"
+    "article article article article"
+    "footer footer footer footer"
+    ;
+}
+
+.container header {
+grid-area: header;
+}
+
+.container footer {
+    grid-area: footer;
+}
+.container main article {
+    grid-area: article;
+}
