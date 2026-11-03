@@ -1,35 +1,32 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-header, footer {
-    background-color: #00557d;
-    color: white;
-    padding: 0.5rem;
+header,
+footer {
+  background-color: #00557d;
+  color: white;
+  padding: 0.5rem;
+  grid-column: span 4;
 }
 
 main article {
-    background-color: #a9e8dc;
+  background-color: #a9e8dc;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
 .container {
-    display: grid;
-    grid-template-areas: "header header header header"
-    "article article article article"
-    "article article article article"
-    "footer footer footer footer"
-    ;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, fr);
+  margin: 1rem;
+  height: 80vw;
+  gap: 0.5rem;
 }
 
-.container header {
-grid-area: header;
-}
-
-.container footer {
-    grid-area: footer;
-}
-.container main article {
-    grid-area: article;
+.container main {
+  display: contents;
 }
