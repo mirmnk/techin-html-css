@@ -4,29 +4,75 @@
   padding: 0;
 }
 
-header,
-footer {
+.container > header,
+.container > footer,
+.container1 > header,
+.container1 > footer,
+.container2 > header,
+.container2 > footer {
   background-color: #00557d;
   color: white;
   padding: 0.5rem;
+}
+
+.container > header,
+.container > footer {
   grid-column: span 4;
 }
 
-main article {
+.container > main article,
+.container1 > main article,
+.container2 > main article {
   background-color: #a9e8dc;
   border-radius: 5px;
   padding: 0.5rem;
 }
 
+.container,
+.container1,
+.container2 {
+  margin-block: 1rem;
+  margin-inline: auto;
+  width: min(100% - 2rem, 75rem);
+  height: 80vh;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, fr);
-  margin: 1rem;
-  height: 80vw;
+  grid-template-rows: repeat(4, 1fr);
   gap: 0.5rem;
 }
 
-.container main {
+.container > main {
   display: contents;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container1 > header,
+.container1 > footer {
+  flex: 1;
+}
+.container1 > main {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.container2 {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 0.5rem;
+}
+
+.container2 > main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
