@@ -32,18 +32,18 @@
 #main-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: var(--header-footer-height) 10rem 15rem var(
-      --header-footer-height
-    );
+  grid-template-rows:
+    var(--header-footer-height) repeat(2, minmax(10rem, auto))
+    var(--header-footer-height);
   width: min(100% - var(--site-inline-margin) * 2, 75rem);
   margin-inline: auto;
   gap: 0.5rem;
+  margin-block: 1rem;
 }
 
 #main-container > header,
 #main-container > footer {
   grid-column: 1/4;
-  height: var(--header-footer-height);
 }
 
 #main-container section#block1 {
@@ -56,7 +56,7 @@
   grid-column: 1/3;
   border: 1px solid var(--article-border-color);
   padding: var(--article-padding);
-  background-color: var(--article-bkg-clor);
+  background-color: var(--article-bkg-color);
 }
 #main-container aside {
   border: 1px solid var(--aside-border-color);
