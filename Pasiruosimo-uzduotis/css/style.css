@@ -1,0 +1,189 @@
+/************************/
+/* Bendras stylius     */
+/**********************/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: orangered;
+  --main-hover: rgb(21, 99, 243);
+  --main-font-color: #212529;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  /* width: min(95%, 80rem); */
+  /* width: clamp(40rem, 95vw, 80rem); */
+  min-width: 20rem;
+  max-width: 80rem;
+  margin-inline: auto;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--main-font-color);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Carter One", Arial, Helvetica, sans-serif;
+}
+
+.container main section {
+  padding-inline: 2rem;
+}
+/************************/
+/* Hederio stylius     */
+/**********************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0.75rem 10rem 0.75rem 4rem;
+  background-color: white;
+}
+
+header {
+  height: 20rem;
+  background-image: url("../images/Backimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+a {
+  text-decoration: none;
+  color: #595959;
+  font-size: 0.75rem;
+}
+
+header h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+header > .hero {
+  padding-top: 3rem;
+  padding-left: 5rem;
+  width: 25rem;
+}
+
+nav span {
+  color: var(--main-color);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+button[type="submit"] {
+  background-color: var(--main-color);
+  border: 0;
+  color: white;
+}
+input[type="text"] {
+  border: 0;
+  width: 50%;
+}
+/********************/
+/* Delivery section */
+/********************/
+
+#services {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  top: -1.5rem;
+}
+
+#services img {
+  width: 100%;
+}
+
+#services article {
+  width: 27%;
+  text-align: center;
+}
+
+#services article h3 {
+  color: var(--main-color);
+}
+
+@media (max-width: 35rem) {
+  section#services {
+    flex-direction: column;
+    align-items: center;
+  }
+  section#services article {
+    width: 90%;
+  }
+}
+/*************************/
+/* Section what we offer */
+/*************************/
+
+section#what-we-offer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1rem;
+}
+
+div#what-we-offer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: left;
+}
+
+div#what-we-offer-flex article {
+  border: 1px solid #dee2e6;
+  border-radius: 0.3rem;
+  flex-basis: 25%;
+  background-color: white;
+  padding: 1rem;
+}
+
+div#what-we-offer-flex article .material-symbols-outlined {
+  color: var(--main-color);
+}
+/********************/
+/* Section why us */
+/**********************/
+
+section#why-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 75%;
+  margin-inline: auto;
+}
+
+section#why-us img {
+  width: 40%;
+}
+
+section#why-us > div {
+  width: 40%;
+}
+
+section#why-us > div span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/*****************
+/* Footer style */
+/*****************/
+
+footer {
+  background-color: #212529;
+  text-align: center;
+  padding-block: 1rem;
+  color: white;
+}
