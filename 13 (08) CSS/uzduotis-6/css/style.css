@@ -35,11 +35,29 @@
   color: var(--overimage-txt-color);
   text-align: center;
   width: 30%;
-    margin-right: 2rem;
+  margin-right: 2rem;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: .5rem;
-    box-shadow: 7px 6px 16px -5px rgba(79, 79, 79, 0.62);
+  border-radius: 0.5rem;
+  box-shadow: 7px 6px 16px -5px rgba(79, 79, 79, 0.62);
 }
 .container > header > article h1 {
   text-transform: uppercase;
+}
+
+/***********************************
+**  Main sekcijos stylius
+/**********************************/
+
+.container > main {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: ;
+}
+
+.container > main figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container > main figure:nth-child(1) {
 }
