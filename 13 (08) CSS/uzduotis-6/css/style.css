@@ -7,11 +7,11 @@
 :root {
   --site-margin: 1rem;
   --overimage-txt-color: white;
+  --article-font-color: rgba(47, 45, 45, 0.883);
 }
 
 .container {
   width: min(100% - var(--site-margin) * 2, 75rem);
-  border: 1px solid #000;
   margin-inline: auto;
   margin-block: var(--site-margin);
 }
@@ -21,7 +21,6 @@
 
 .container > header {
   height: clamp(8rem, 20vw, 15rem);
-  border: 1px solid #000;
   background-image: url("../images/hero-shuttle-enterprise.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,13 +50,58 @@
 .container > main {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-auto-rows: ;
+  grid-auto-rows: clamp(8rem, 8vw, 20rem);
 }
 
 .container > main figure img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.container > main figure:nth-child(1) {
+.container > main figure:nth-child(3),
+.container > main figure:nth-child(6),
+.container > main figure:nth-child(13),
+.container > main figure:nth-child(16) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.container > main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--article-font-color);
+  font-size: 0.8rem;
+}
+
+/****************************************
+** Footer stylius
+****************************************/
+
+.container > footer {
+  background-color: #e6e6e6;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.container > footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  width: 15em;
+  justify-content: space-between;
+}
+
+.container > footer ul li {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container > footer p {
+  margin-block: 1rem;
+}
+.container > footer p.copyright {
+  font-style: italic;
+  font-size: 0.9em;
 }
