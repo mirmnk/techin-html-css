@@ -1,0 +1,43 @@
+:root {
+  --main-bkg-color: #333;
+  --main-txt-color: white;
+  --padding-inline-block: 3rem;
+}
+
+.header,
+.footer {
+  background-color: var(--main-bkg-color);
+  color: var(--main-txt-color);
+  padding: 20px;
+  text-align: center;
+  padding-inline: var(--padding-inline-block);
+}
+
+.section-about,
+.section-products,
+.section-contacts {
+  padding-inline: var(--padding-inline-block);
+}
+
+.button-primary,
+.button-secondary {
+  color: var(--main-txt-color);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-primary {
+  background-color: blue;
+}
+
+.button-secondary {
+  background-color: gray;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}

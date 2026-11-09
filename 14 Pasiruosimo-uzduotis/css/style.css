@@ -56,10 +56,14 @@ header {
   background-position: left;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #595959;
   font-size: 0.75rem;
+}
+
+header a:hover {
+  color: var(--main-hover);
 }
 
 header h1 {
@@ -84,6 +88,10 @@ button[type="submit"] {
   background-color: var(--main-color);
   border: 0;
   color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--main-hover);
 }
 input[type="text"] {
   border: 0;
@@ -166,6 +174,7 @@ section#why-us {
 
 section#why-us img {
   width: 40%;
+  align-self: center;
 }
 
 section#why-us > div {
@@ -177,6 +186,15 @@ section#why-us > div span {
   color: var(--main-color);
 }
 
+section#why-us > div ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section#why-us > div ul li::before {
+  content: "* ";
+}
+
 /*****************
 /* Footer style */
 /*****************/
@@ -186,4 +204,18 @@ footer {
   text-align: center;
   padding-block: 1rem;
   color: white;
+}
+
+@media (max-width: 32rem) {
+  section#why-us {
+    justify-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  section#why-us > div {
+    width: 90%;
+  }
+  section#why-us > img {
+    width: 90%;
+  }
 }
