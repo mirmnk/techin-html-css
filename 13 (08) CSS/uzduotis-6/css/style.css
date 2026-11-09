@@ -50,13 +50,17 @@
 .container > main {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-auto-rows: clamp(8rem, 8vw, 20rem);
+  grid-auto-rows: clamp(8rem, 18vw, 20rem);
 }
 
 .container > main figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.container > main figure figcaption {
+  display: none;
 }
 
 .container > main figure:nth-child(3),
@@ -104,4 +108,36 @@
 .container > footer p.copyright {
   font-style: italic;
   font-size: 0.9em;
+}
+/************************************
+** Pritaikymo ekranams stylius
+************************************/
+
+@media (max-width: 48rem) {
+  .container > main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: clamp(8rem, 36vw, 20rem);
+  }
+
+  .container > header {
+  height: clamp(8rem, 60vw, 15rem);
+}
+
+@media (max-width: 36rem) {
+  .container > main {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows:  90vw;
+  }
+
+  .container > main figure:nth-child(3),
+  .container > main figure:nth-child(6),
+  .container > main figure:nth-child(13),
+  .container > main figure:nth-child(16) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .container > header {
+  height: clamp(6rem, 90vw, 10rem);
+}
 }
